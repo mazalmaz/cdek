@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СДЭК</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="">
+                <span>поставщики</span>
+            </a>
+            <div class="header__rt">
+                <div class="header__search">
+                    <div class="search-box not-mobile">
+                        <input type="text" class="search-input">
+                        <input type="button" class="search-button" value="Найти">
+                    </div>
+                    <span class="search-button-mobile modal_trigger" data-pop="search"></span>
+                </div>
+                <a href="#" class="header__cart">
+                    <span>8</span>
+                </a>
+                <a href="tel:+79636710499" class="header__phone"><span>+7 (963) 671 04 99</span></a>
+                <span class="header__burger modal_trigger" data-pop="menu"></span>
+            </div>
+        </div>
+    </header>
+    <main class="main no-find">
+        <div class="container">
+            <div class="container fileload">
+                <h1 class="main__title">Поиск товара</h1>
+                <div class="tabs">
+
+                    <div class="fileload__lt">
+                        <ul class="tabs__list">
+                            <li class="active"><span>Изображение <span>товара</span> </span></li>
+                            <li><span>Ссылка на товар <span>с маркетплейса</span> </span></li>
+                        </ul>
+                        <div class="tabs__content active">
+
+                            <div class="fileload__decoration mobile">
+                                <span>Вы можете либо загрузить до 3х изображений, либо вставить ссылку на товар одного
+                                    из 3х маркетплейсов: Ozon, Aliexpress, Яндекс Маркет или Wildberris. Мы произведем
+                                    поиск товара и предоставим результаты на ваш E-mail.</span>
+                                <ul class="fileload__market">
+                                    <li><img src="img/wb.svg" alt=""></li>
+                                    <li><img src="img/ae.svg" alt=""></li>
+                                    <li><img src="img/oz.svg" alt=""></li>
+                                </ul>
+                            </div>
+
+                            <div class="fileload__intro">Перетащите до 3х изображений jpg/png размером не более 500 кб.
+                            </div>
+                            <form id="upload" class="fileload__form">
+                                <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+                                <input type="file" id="fileload__select" name="fileselect[]" multiple="multiple"
+                                    style="display: none" />
+                                <div id="fileload__drag"></div>
+                                <div class="fileload__array-img"></div>
+                                <div class="fileload__messages"></div>
+                                <div class="fileload__intro">Опишите нужное количество или любые другие детали</div>
+                                <textarea name="" id="" class="fileload__textarea" placeholder="Комментарии"></textarea>
+                                <input type="submit" class="fileload__sumbit" value="Отправить заявку на поиск">
+
+                            </form>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="fileload__decoration mobile">
+                                <span>Вы можете либо загрузить до 3х изображений, либо вставить ссылку на товар одного
+                                    из 3х маркетплейсов: Ozon, Aliexpress, Яндекс Маркет или Wildberris. Мы произведем
+                                    поиск товара и предоставим результаты на ваш E-mail.</span>
+                                <ul class="fileload__market">
+                                    <li><img src="img/wb.svg" alt=""></li>
+                                    <li><img src="img/ae.svg" alt=""></li>
+                                    <li><img src="img/oz.svg" alt=""></li>
+                                </ul>
+                            </div>
+                            <form id="market_url" class="fileload__form">
+                                <div class="fileload__intro">Вставьте ссылку на товар с маркетплейса Ozon, Aliexpress или
+                                    Wildberris
+                                </div>
+                                <input type="text" class="fileload__input" placeholder="Введите URL маркетплейса" value="">
+                                <div class="fileload__intro">Опишите нужное количество или любые другие детали</div>
+                                <textarea name="" id="" class="fileload__textarea" placeholder="Комментарии"></textarea>
+                                <input type="submit" class="fileload__sumbit" value="Отправить заявку на поиск">
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="fileload__rt">
+                        <div class="fileload__decoration">
+                            <span>Вы можете либо загрузить до 3х изображений, либо вставить ссылку на товар одного
+                                из 3х маркетплейсов: Ozon, Aliexpress, Яндекс Маркет или Wildberris. Мы произведем
+                                поиск товара и предоставим результаты на ваш E-mail.</span>
+                            <ul class="fileload__market">
+                                <li><img src="img/wb.svg" alt=""></li>
+                                <li><img src="img/ae.svg" alt=""></li>
+                                <li><img src="img/oz.svg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">О платформе</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Поддержка:</div>
+                    <ul class="footer__list">
+                        <li><a href="mailto:support@cdek.ru">support@cdek.ru</a></li>
+                        <li><a href="tel:88004657772">8 800 465 77 72</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Мы в соцсетях:</div>
+                    <ul class="footer__list">
+                        <li><a href="#">VKontakte</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Viber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    © 2022 CDEK.Provider
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-popup  mobile-menu"  data-pop="menu">
+        <span class="mobile-popup__close"></span>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li><a href="#">Каталог</a></li>
+            </ul>
+        </div>
+        <div class="mobile-popup__title">Каталог</div>
+        <div class="mobile-menu__items">
+            <ul class="mobile-menu__list">
+                <li class="active"><a href="#">Электроника</a></li>
+                <li><a href="#">Товары для дома</a></li>
+                <li><a href="#">Женская одежда</a></li>
+                <li><a href="#">Чемоданы и сумки</a></li>
+                <li><a href="#">Хобби и спорт</a></li>
+                <li><a href="#">Детские</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-popup  mobile-search" data-pop="search">
+        <span class="mobile-popup__close"></span>
+        <div class="mobile-popup__title">Поиск</div>
+        <div class="search-box">
+            <input type="text" class="search-input">
+            <input type="button" class="search-button icon" value="">
+        </div>
+        <a href="#" class="mobile-search__btn"><span>Не нашли нужный товар?</span></a>
+        <div class="no-find__box">
+            <span>К сожалению товар не найден</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

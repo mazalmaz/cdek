@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СДЭК</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="">
+                <span>поставщики</span>
+            </a>
+            <div class="header__rt">
+                <div class="header__search">
+                    <div class="search-box not-mobile">
+                        <input type="text" class="search-input">
+                        <input type="button" class="search-button" value="Найти">
+                    </div>
+                    <span class="search-button-mobile modal_trigger" data-pop="search"></span>
+                </div>
+                <a href="#" class="header__cart">
+                    <span>8</span>
+                </a>
+                <a href="tel:+79636710499" class="header__phone"><span>+7 (963) 671 04 99</span></a>
+                <span class="header__burger modal_trigger" data-pop="menu"></span>
+            </div>
+        </div>
+    </header>
+    <main class="main product_card">
+        <div class="container">
+            <div class="catalog-nav">
+                <ul class="catalog-nav__list">
+                    <li class="catalog-nav__item all-category"><a href="#">Все категории</a></li>
+                    <li class="catalog-nav__item"><a href="#">Электроника</a></li>
+                    <li class="catalog-nav__item"><a href="#">Товары для дома</a></li>
+                    <li class="catalog-nav__item"><a href="#">Женская одежда и аксессуары</a></li>
+                    <li class="catalog-nav__item"><a href="#">Чемоданы и сумки</a></li>
+                    <li class="catalog-nav__item"><a href="#">Хобби и спорт</a></li>
+                    <li class="catalog-nav__item"><a href="#">Детские</a></li>
+                    <li class="catalog-nav__item"><a href="#">Красота и здоровье</a></li>
+                    <li class="catalog-nav__item"><a href="#">Автомобили и мотоциклы</a></li>
+                    <li class="catalog-nav__item"><a href="#">Промышленность и бизнес</a></li>
+                    <li class="catalog-nav__item"><a href="#">Мужская одежда и аксессуары</a></li>
+                    <li class="catalog-nav__item"><a href="#">Обувь</a></li>
+                    <li class="catalog-nav__item"><a href="#">Товары для животных</a></li>
+                </ul>
+            </div>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Электроника</a></li>
+                    <li><span>Контроллер лопасти для PS4...</span></li>
+                </ul>
+            </div>
+            <div class="product_card__head">
+                <h1 class="product_card__title">Контроллер лопасти для PS4 Кнопка назад</h1>
+                <span class="product_card__country"><img src="img/vn.svg" alt="">Вьетнам</span>
+            </div>
+
+            <div class="product_card__body">
+                <div class="product_card__left">
+                    <div class="product_card__gallery gallery-card">
+                        <div class="gallery-card__full">
+                            <img src="img/product-1.png" alt="">
+                        </div>
+                        <div class="gallery-card__tumb">
+                            <span class="gallery-card__item active"><img src="img/product-tumb-1.png" alt=""></span>
+                            <span class="gallery-card__item"><img src="img/product-tumb-2.png" alt=""></span>
+                            <span class="gallery-card__item"><img src="img/product-tumb-3.png" alt=""></span>
+                            <span class="gallery-card__item"><img src="img/product-tumb-4.png" alt=""></span>
+                            <span class="gallery-card__item"><img src="img/product-tumb-5.png" alt="">
+                                <span class="gallery-card__showall">+3</span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_card__right">
+                    <div class="product_card__option">
+                        <div class="product_card__fl">
+                            <span class="product_card__title-sm">Цена поставщика</span>
+                            <div class="product_card__var">
+                                <input type="radio" class="product_card__radio" name="radio1" id="radio1" checked>
+                                <label for="radio1" class="product_card__label">
+                                    <span class="product_card__quantity">300 — 499 шт.</span>
+                                    <span class="product_card__price">253 ₽</span>
+                                </label>
+                                <input type="radio" class="product_card__radio" name="radio1" id="radio2">
+                                <label for="radio2" class="product_card__label">
+                                    <span class="product_card__quantity">500 + шт.</span>
+                                    <span class="product_card__price">230 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="product_card__fl">
+                            <span class="product_card__title-sm">Общее количество</span>
+                            <div class="product_card__total-prod">
+                                <span>Всего товаров</span>
+                                <span>650 шт.</span>
+                            </div>
+                            <div class="product_card__size available-size">
+                                <div class="available-size__title">
+                                    Доступный размер
+                                </div>
+                                <div class="available-size__body">
+                                    <div class="available-size__lt">
+                                        <div class="available-size__col">
+                                            <div class="available-size__row">
+                                                <span class="available-size__quan">100 ш</span>
+                                            </div>
+                                            <div class="available-size__row">
+                                                <span class="available-size__val">35</span>
+                                            </div>
+                                        </div>
+                                        <div class="available-size__col">
+                                            <div class="available-size__row">
+                                                <span class="available-size__quan">50 ш</span>
+                                            </div>
+                                            <div class="available-size__row">
+                                                <span class="available-size__val">37</span>
+                                            </div>
+                                        </div>
+                                        <div class="available-size__col">
+                                            <div class="available-size__row">
+                                                <span class="available-size__quan">200 ш</span>
+                                            </div>
+                                            <div class="available-size__row">
+                                                <span class="available-size__val">38</span>
+                                            </div>
+                                        </div>
+                                        <div class="available-size__col">
+                                            <div class="available-size__row">
+                                                <span class="available-size__quan">20 ш</span>
+                                            </div>
+                                            <div class="available-size__row">
+                                                <span class="available-size__val">39</span>
+                                            </div>
+                                        </div>
+                                        <div class="available-size__col">
+                                            <div class="available-size__row">
+                                                <span class="available-size__quan">10 ш</span>
+                                            </div>
+                                            <div class="available-size__row">
+                                                <span class="available-size__val">40</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="available-size__rt">
+                                        <span class="available-size__rotat">
+                                            <span class="available-size__prev"></span>
+                                            <span class="available-size__next"></span>
+                                        </span>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card__sidebar">
+                        <div class="product_card__sidebar-fx">
+                            <div class="product_card__sidebar-head">
+                                <div>
+                                    <span class="product_card__title-sm">Объем проданного:</span>
+                                    <ul class="product_card__market">
+                                        <li class="wildberries"><span>8 291</span></li>
+                                        <li class="ozon"><span>6 482</span></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="product_card__title-sm">Средняя цена:</span>
+                                    <span class="product_card__volume">281 ₽</span>
+                                </div>
+
+                            </div>
+                            <div class="product_card__total total">
+                                <div class="total__head"><span>Итоговая стоимость единицы</span> <span>253 ₽</span>
+                                </div>
+                                <div class="total__content">
+                                    <ul class="total__list">
+                                        <li><span>650 товаров</span><span>164 450 ₽</span>
+                                        </li>
+
+                                        <!-- <li><span>НДС <i class="i"></i></span><span>49 470 ₽</span></li> -->
+                                    </ul>
+                                </div>
+                                <div class="total__footer">
+                                    <div class="total__result">
+                                        <span>Итого</span>
+                                        <span>164 450 ₽</span>
+                                    </div>
+                                    <a href="#" class="total__btn">В корзину</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product_card__help help">
+                            <div class="help__title">Нужна помощь?</div>
+                            <ul class="help__list">
+                                <li>Подберем тестовые образцы</li>
+                                <li>Ответим на вопросы</li>
+                                <li>Поможем создать свой бренд</li>
+                            </ul>
+                            <a href="#" class="help__btn">Связаться с менеджером</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="product_card__footer">
+                <div class="product_card__decoration">
+                    <div class="product_card__decoration-title"><span>Описание</span> </div>
+                    <p>
+                        Совместимая платформа: Тонкий контроллер PS4<br>
+                        Номер модели: JDM040-ШБН-ООПЕР-кружка<br>
+                        Место происхождения: Гуандун, Китай<br>
+                        Материал: ABS<br>
+                        Измерение: как показывают фотографии<br>
+                        Вес: 0.1 кг<br>
+                        Совместим с: PS4 Pro/Тонкий геймпад<br>
+                        Тип: для корпуса контроллера PS4<br>
+                        Особенности: Заменен корпус оболочки<br>
+                        Функция: Многофункциональный<br>
+                        Название продукта: Корпус оболочки контроллера PS4 Корпус корпуса корпуса<br>
+                        Использование: Матовая замена корпусной оболочки<br>
+                        Состояние: 100% бренда<br>
+                        Срок оплаты: Гарантия торговли<br>
+                        Индивидуальный заказ: Хорошо<br>
+                        Цвета: микс
+                    </p>
+                    <p>Тип товара: Кнопки и корпусы для контроллеров PlayStation</p>
+                </div>
+
+                <div class="product_card__guarant guarant module">
+                    <div class="module__title">Гарантии</div>
+                    <ul class="guarant__list">
+                        <li><span>Растаможим и сертифицируем для вас</span></li>
+                        <li><span>Доставим «в белую» без задержек</span></li>
+                        <li><span>Предоставим закрывающие и разрешительные документы</span></li>
+                        <li><span>Решим вопросы по бракованному товару в пользу клиента</span></li>
+                    </ul>
+                </div>
+
+                <div class="product_card__relative module">
+                    <div class="module__title">Похожие товары</div>
+                    <div class="catalog-items">
+                        <div class="catalog-item">
+                            <img src="img/catalog-1.png" alt="">
+                            <div class="catalog-item__intro">
+                                <div class="catalog-item__top">
+                                    <div class="catalog-item__price">
+                                        <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                    </div>
+                                    <ul class="catalog-item__market">
+                                        <li class="wildberries"><span>8 291</span></li>
+                                        <li class="ozon"><span>6 482</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item__txt">
+                                    <span>Мин. 60 шт.</span>
+                                    <span>Программируемые функциональные кнопки расширения контроллер лопасти для
+                                        PS4 Кнопка
+                                        назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-item">
+                            <img src="img/catalog-2.png" alt="">
+                            <div class="catalog-item__intro">
+                                <div class="catalog-item__top">
+                                    <div class="catalog-item__price fav">
+                                        <div><span>21 000</span> — <span>35 000 ₽</span></div><a href="#"
+                                            class="fav__link"></a>
+                                    </div>
+                                </div>
+                                <div class="catalog-item__txt">
+                                    <span>Мин. 60 шт.</span>
+                                    <span>Программируемые функциональные кнопки расширения контроллер лопасти для
+                                        PS4 Кнопка
+                                        назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-item">
+                            <img src="img/catalog-3.png" alt="">
+                            <div class="catalog-item__intro">
+                                <div class="catalog-item__top">
+                                    <div class="catalog-item__price">
+                                        <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                    </div>
+                                    <ul class="catalog-item__market">
+                                        <li class="wildberries"><span>8 291</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item__txt">
+                                    <span>Мин. 60 шт.</span>
+                                    <span>Программируемые функциональные кнопки расширения контроллер лопасти для
+                                        PS4 Кнопка
+                                        назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="catalog-item">
+                            <img src="img/catalog-4.png" alt="">
+                            <div class="catalog-item__intro">
+                                <div class="catalog-item__top">
+                                    <div class="catalog-item__price">
+                                        <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                    </div>
+                                    <ul class="catalog-item__market">
+                                        <li class="wildberries"><span>8 291</span></li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-item__txt">
+                                    <span>Мин. 60 шт.</span>
+                                    <span>Программируемые функциональные кнопки расширения контроллер лопасти для
+                                        PS4 Кнопка
+                                        назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="product_card__all">Показать еще</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">О платформе</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Поддержка:</div>
+                    <ul class="footer__list">
+                        <li><a href="mailto:support@cdek.ru">support@cdek.ru</a></li>
+                        <li><a href="tel:88004657772">8 800 465 77 72</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Мы в соцсетях:</div>
+                    <ul class="footer__list">
+                        <li><a href="#">VKontakte</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Viber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    © 2022 CDEK.Provider
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-popup  mobile-menu" data-pop="menu">
+        <span class="mobile-popup__close"></span>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li><a href="#">Каталог</a></li>
+            </ul>
+        </div>
+        <div class="mobile-popup__title">Каталог</div>
+        <div class="mobile-menu__items">
+            <ul class="mobile-menu__list">
+                <li class="active"><a href="#">Электроника</a></li>
+                <li><a href="#">Товары для дома</a></li>
+                <li><a href="#">Женская одежда</a></li>
+                <li><a href="#">Чемоданы и сумки</a></li>
+                <li><a href="#">Хобби и спорт</a></li>
+                <li><a href="#">Детские</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-popup  mobile-search" data-pop="search">
+        <span class="mobile-popup__close"></span>
+        <div class="mobile-popup__title">Поиск</div>
+        <div class="search-box">
+            <input type="text" class="search-input">
+            <input type="button" class="search-button icon" value="">
+        </div>
+        <a href="#" class="mobile-search__btn"><span>Не нашли нужный товар?</span></a>
+        <div class="no-find__box">
+            <span>К сожалению товар не найден</span>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

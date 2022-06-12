@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СДЭК</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="">
+                <span>поставщики</span>
+            </a>
+            <div class="header__rt">
+                <div class="header__search">
+                    <div class="search-box not-mobile">
+                        <input type="text" class="search-input">
+                        <input type="button" class="search-button" value="Найти">
+                    </div>
+                    <span class="search-button-mobile modal_trigger" data-pop="search"></span>
+                </div>
+                <a href="#" class="header__cart">
+                    <span>8</span>
+                </a>
+                <a href="tel:+79636710499" class="header__phone"><span>+7 (963) 671 04 99</span></a>
+                <span class="header__burger modal_trigger" data-pop="menu"></span>
+            </div>
+        </div>
+    </header>
+    <main class="main categoty">
+        <div class="container">
+            <div class="catalog-nav">
+                <ul class="catalog-nav__list">
+                    <li class="catalog-nav__item all-category"><a href="#">Все категории</a></li>
+                    <li class="catalog-nav__item"><a href="#">Электроника</a></li>
+                    <li class="catalog-nav__item"><a href="#">Товары для дома</a></li>
+                    <li class="catalog-nav__item"><a href="#">Женская одежда и аксессуары</a></li>
+                    <li class="catalog-nav__item"><a href="#">Чемоданы и сумки</a></li>
+                    <li class="catalog-nav__item"><a href="#">Хобби и спорт</a></li>
+                    <li class="catalog-nav__item"><a href="#">Детские</a></li>
+                    <li class="catalog-nav__item"><a href="#">Красота и здоровье</a></li>
+                    <li class="catalog-nav__item"><a href="#">Автомобили и мотоциклы</a></li>
+                    <li class="catalog-nav__item"><a href="#">Промышленность и бизнес</a></li>
+                    <li class="catalog-nav__item"><a href="#">Мужская одежда и аксессуары</a></li>
+                    <li class="catalog-nav__item"><a href="#">Обувь</a></li>
+                    <li class="catalog-nav__item"><a href="#">Товары для животных</a></li>
+                </ul>
+            </div>
+            <div class="fillter-mobile">
+                <div class="fillter-mobile__rt">
+                    <div class="fillter-mobile__col">
+                        <span class="fillter-mobile__search search-sort-btn search modal_trigger" data-pop="search">Поиск</span>
+                    </div>
+                    <div class="fillter-mobile__col">
+                        <span class="fillter-mobile__sort search-sort-btn sort modal_trigger" data-pop="sort">Сортировка</span>
+                    </div>
+                </div>
+                <div class="fillter-mobile__lt">
+                    <div class="fillter-mobile__col"><span class="fillter-mobile__list view-btn"></span></div>
+                    <div class="fillter-mobile__col"><span class="fillter-mobile__grid view-btn active"></span></div>
+                </div>
+            </div>
+            <div class="catalog-fillter not-mobile">
+                <div class="catalog-fillter__group first">
+                    <div class="catalog-fillter__col">
+                        <span class="catalog-fillter__label">Топ товары:</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div class="catalog-fillter__col">
+                        <span class="catalog-fillter__label">Сортировка:</span>
+                        <div class="__select">
+                            <div class="__select__title" data-default="По цене">По цене</div>
+                            <div class="__select__content">
+                                <input id="s-0" class="__select__input" type="radio" name="select-1" checked>
+                                <label for="s-0" class="__select__label">По цене</label>
+                                <input id="s-1" class="__select__input" type="radio" name="select-1">
+                                <label for="s-1" class="__select__label">По цене</label>
+                                <input id="s-2" class="__select__input" type="radio" name="select-1">
+                                <label for="s-2" class="__select__label">По цене</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-fillter__col">
+                        <span class="catalog-fillter__label">Цена</span>
+                        <div class="__select">
+                            <div class="__select__title" data-default="По цене">350 ₽</div>
+                            <div class="__select__content">
+                                <input id="s-5" class="__select__input" type="radio" name="select-4" checked>
+                                <label for="s-5" class="__select__label">450 ₽</label>
+                                <input id="s-6" class="__select__input" type="radio" name="select-4">
+                                <label for="s-6" class="__select__label">550 ₽</label>
+                            </div>
+                        </div>
+                        <span class="catalog-fillter__hyphen"></span>
+                        <div class="__select">
+                            <div class="__select__title" data-default="По цене">2000 ₽</div>
+                            <div class="__select__content">
+                                <input id="s-7" class="__select__input" type="radio" name="select-5" checked>
+                                <label for="s-7" class="__select__label">3000 ₽</label>
+                                <input id="s-8" class="__select__input" type="radio" name="select-5">
+                                <label for="s-8" class="__select__label">4000 ₽</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="catalog-fillter__group">
+                    <div class="catalog-fillter__col">
+                        <span class="catalog-fillter__label">Страна:</span>
+                        <div class="__select country" data-state="">
+                            <div class="__select__title" data-default="Вьетнам"><img src="img/vn.svg" alt=""> Вьетнам
+                            </div>
+                            <div class="__select__content">
+                                <input id="s-0" class="__select__input" type="radio" name="select-2" checked>
+                                <label for="s-0" class="__select__label"><img src="img/vn.svg" alt=""> Вьетнам</label>
+                                <input id="s-1" class="__select__input" type="radio" name="select-2">
+                                <label for="s-1" class="__select__label"><img src="img/in.svg" alt=""> Индия</label>
+                                <input id="s-2" class="__select__input" type="radio" name="select-2">
+                                <label for="s-2" class="__select__label"><img src="img/cn.svg" alt=""> Китай</label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-fillter__col">
+                        <span class="catalog-fillter__label">Маркетплейс:</span>
+                        <div class="__select" data-state="">
+                            <div class="__select__title" data-default="Вьетнам"><img src="img/ozon.svg" alt=""> Ozon
+                            </div>
+                            <div class="__select__content">
+                                <input id="s-3" class="__select__input" type="radio" name="select-3" checked>
+                                <label for="s-3" class="__select__label"><img src="img/ozon.svg" alt=""> Ozon</label>
+                                <input id="s-4" class="__select__input" type="radio" name="select-3">
+                                <label for="s-4" class="__select__label"><img src="img/ozon.svg" alt=""> Ozon</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-fillter__col last">
+                        <a href="#" class="catalog-fillter__btn btn-1"><span>Не нашли товар?</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-body">
+                <div class="catalog-body__left">
+                    <div class="catalog-title">
+                        <a href="#" class="catalog-back"></a>
+                        Электроника
+                    </div>
+                    <ul class="catalog-menu">
+                        <li class="catalog-menu__item"><a href="#">Аксессуары для электроники</a></li>
+                        <li class="catalog-menu__item"><a href="#">Компьютеры и аксессуары</a></li>
+                        <li class="catalog-menu__item"><a href="#">Телефоны и коммуникация</a></li>
+                        <li class="catalog-menu__item"><a href="#">Аудио и видео</a></li>
+                        <li class="catalog-menu__item"><a href="#">Устройства хранения</a></li>
+                        <li class="catalog-menu__item"><a href="#">Смартфоны</a></li>
+                        <li class="catalog-menu__item"><a href="#">Смарт электроника</a></li>
+                        <li class="catalog-menu__item"><a href="#">Бытовая техника</a></li>
+                        <li class="catalog-menu__item video-games"><a href="#">Видеоигры</a></li>
+                    </ul>
+                    <a href="#" class="catalog-menu__btn"><span>Не нашли <span>нужный</span> товар?</span> </a>
+                </div>
+
+                <div class="catalog-body__right">
+                    <div class="catalog-items col-3">
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-1.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="wildberries"><span>3 564</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-2.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-3.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                            <li class="wildberries"><span>5 645</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-4.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>5 667</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-1.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="wildberries"><span>6 454</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-2.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-3.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>4 566</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-4.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-1.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-2.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-3.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="catalog-item">
+                            <div class="catalog-item__img">
+                                <img src="img/catalog-4.png" alt="">
+                            </div>
+                            <div class="catalog-item__intro">
+                                <div>
+                                    <div class="catalog-item__top">
+                                        <div class="catalog-item__price">
+                                            <div><span>21 000</span> — <span>35 000 ₽</span></div>
+                                        </div>
+                                        <ul class="catalog-item__market">
+                                            <li class="ozon"><span>6 482</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="catalog-item__txt">
+                                        <span class="catalog-item__min">Мин. 60 шт.</span>
+                                        <span>Программируемые функциональные кнопки расширения контроллер лопасти для PS4 Кнопка
+                                            назад
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="catalog-item__addtocat"><span>В корзину</span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-footer">
+                        <ul class="catalog-pag">
+                            <li class="catalog-pag__item start"><a href="#"></a></li>
+                            <li class="catalog-pag__item active"><a href="#">1</a></li>
+                            <li class="catalog-pag__item"><a href="#">2</a></li>
+                            <li class="catalog-pag__item"><a href="#">3</a></li>
+                            <li class="catalog-pag__item"><span>...</span></li>
+                            <li class="catalog-pag__item"><a href="#">11</a></li>
+                            <li class="catalog-pag__item"><a href="#">12</a></li>
+                            <li class="catalog-pag__item end"><a href="#"></a></li>
+                        </ul>
+                        <span class="catalog-count">
+                            <span class="catalog-count__numb">10</span>
+                            <span class="catalog-count__plus"></span>
+                            <span class="catalog-count__minus"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <ul class="footer__list">
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">О платформе</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Поддержка:</div>
+                    <ul class="footer__list">
+                        <li><a href="mailto:support@cdek.ru">support@cdek.ru</a></li>
+                        <li><a href="tel:88004657772">8 800 465 77 72</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__label">Мы в соцсетях:</div>
+                    <ul class="footer__list">
+                        <li><a href="#">VKontakte</a></li>
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Viber</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    © 2022 CDEK.Provider
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-popup  mobile-menu"  data-pop="menu">
+        <span class="mobile-popup__close"></span>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li><a href="#">Каталог</a></li>
+            </ul>
+        </div>
+        <div class="mobile-popup__title">Каталог</div>
+        <div class="mobile-menu__items">
+            <ul class="mobile-menu__list">
+                <li class="active"><a href="#">Электроника</a></li>
+                <li><a href="#">Товары для дома</a></li>
+                <li><a href="#">Женская одежда</a></li>
+                <li><a href="#">Чемоданы и сумки</a></li>
+                <li><a href="#">Хобби и спорт</a></li>
+                <li><a href="#">Детские</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile-popup  mobile-search" data-pop="search">
+        <span class="mobile-popup__close"></span>
+        <div class="mobile-popup__title">Поиск</div>
+        <div class="search-box">
+            <input type="text" class="search-input">
+            <input type="button" class="search-button icon" value="">
+        </div>
+        <a href="#" class="mobile-search__btn"><span>Не нашли нужный товар?</span></a>
+        <div class="no-find__box">
+            <span>К сожалению товар не найден</span>
+        </div>
+    </div>
+    <div class="mobile-popup  mobile-sort" data-pop="sort">
+        <span class="mobile-popup__close"></span>
+        <span class="mobile-sort-btn">Сортировка</span>
+
+        <div class="mobile-fillter">
+            <div class="mobile-fillter__row">
+                <div class="mobile-fillter__top">
+                    <span>Топ товары:</span>
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="mobile-fillter__row">
+                <div class="mobile-fillter__label">Цена:</div>
+                <div class="mobile-fillter__fx">
+                    <div class="__select">
+                        <div class="__select__title" data-default="По цене">350 ₽</div>
+                        <div class="__select__content">
+                            <input id="s-5" class="__select__input" type="radio" name="select-4" checked>
+                            <label for="s-5" class="__select__label">450 ₽</label>
+                            <input id="s-6" class="__select__input" type="radio" name="select-4">
+                            <label for="s-6" class="__select__label">550 ₽</label>
+                        </div>
+                    </div>
+                    <span class="catalog-fillter__hyphen"></span>
+                    <div class="__select">
+                        <div class="__select__title" data-default="По цене">2000 ₽</div>
+                        <div class="__select__content">
+                            <input id="s-7" class="__select__input" type="radio" name="select-5" checked>
+                            <label for="s-7" class="__select__label">3000 ₽</label>
+                            <input id="s-8" class="__select__input" type="radio" name="select-5">
+                            <label for="s-8" class="__select__label">4000 ₽</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-fillter__row">
+                <div class="mobile-fillter__label">Маркетплейс:</div>
+                <div class="__select" data-state="">
+                    <div class="__select__title" data-default="Вьетнам"><img src="img/ozon.svg" alt=""> Ozon
+                    </div>
+                    <div class="__select__content">
+                        <input id="s-3" class="__select__input" type="radio" name="select-3" checked>
+                        <label for="s-3" class="__select__label"><img src="img/ozon.svg" alt=""> Ozon</label>
+                        <input id="s-4" class="__select__input" type="radio" name="select-3">
+                        <label for="s-4" class="__select__label"><img src="img/ozon.svg" alt=""> Ozon</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-fillter__row">
+                <div class="mobile-fillter__label">Страна:</div>
+                <div class="__select" data-state="">
+                    <div class="__select__title" data-default="Вьетнам"><img src="img/vn.svg" alt=""> Вьетнам
+                    </div>
+                    <div class="__select__content">
+                        <input id="s-0" class="__select__input" type="radio" name="select-2" checked>
+                        <label for="s-0" class="__select__label"><img src="img/vn.svg" alt=""> Вьетнам</label>
+                        <input id="s-1" class="__select__input" type="radio" name="select-2">
+                        <label for="s-1" class="__select__label"><img src="img/in.svg" alt=""> Индия</label>
+                        <input id="s-2" class="__select__input" type="radio" name="select-2">
+                        <label for="s-2" class="__select__label"><img src="img/cn.svg" alt=""> Китай</label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-fillter__row">
+                <a href="#" class="mobile-fillter__btn">Применить</a>
+            </div>
+            <div class="mobile-fillter__row">
+                <a href="#" class="mobile-fillter__nofind">Не нашли нужный товар?</a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
